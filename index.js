@@ -66,7 +66,7 @@ function App() {
                     )
                   }
                   target="_blank"
-                  className="btn btn-warning"
+                  className="btn btn-warning ml-2"
                 >
                   <i className="fa fa-twitter"></i>
                 </a>
@@ -79,7 +79,7 @@ function App() {
                     "&canonicaUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button"
                   }
                   target="_blank"
-                  className="btn btn-danger"
+                  className="btn btn-danger ml-2"
                 >
                   <i className="fa fa-tumblr"></i>
                 </a>
