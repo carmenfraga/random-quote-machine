@@ -65,11 +65,22 @@ function App() {
                       '"' + randomQuote.content + '" ' + randomQuote.author
                     )
                   }
+                  target="_blank"
                   className="btn btn-warning"
                 >
                   <i className="fa fa-twitter"></i>
                 </a>
-                <a href="" className="btn btn-danger">
+                <a
+                  href={
+                    "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" +
+                    encodeURIComponent(randomQuote.author) +
+                    "&content=" +
+                    encodeURIComponent(randomQuote.content) +
+                    "&canonicaUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button"
+                  }
+                  target="_blank"
+                  className="btn btn-danger"
+                >
                   <i className="fa fa-tumblr"></i>
                 </a>
               </div>
