@@ -58,7 +58,15 @@ function App() {
                 <button onClick={getNewQuote} className="btn btn-primary ml-3">
                   New Quote
                 </button>
-                <a href="" className="btn btn-warning">
+                <a
+                  href={
+                    "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" +
+                    encodeURIComponent(
+                      '"' + randomQuote.content + '" ' + randomQuote.author
+                    )
+                  }
+                  className="btn btn-warning"
+                >
                   <i className="fa fa-twitter"></i>
                 </a>
                 <a href="" className="btn btn-danger">
